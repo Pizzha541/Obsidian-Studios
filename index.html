@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Obsidian Studios - Cargando...</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .loader {
+      text-align: center;
+    }
+
+    .loader h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #9c27b0;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      background-color: #9c27b0;
+      border-radius: 50%;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+      0%, 80%, 100% {
+        transform: scale(0);
+      }
+      40% {
+        transform: scale(1);
+      }
+    }
+  </style>
+  <script>
+    setTimeout(function () {
+      window.location.href = "https://sites.google.com/view/obsidianstudios/p%C3%A1gina-principal";
+    }, 5000); // Redirige en 5 segundos
+  </script>
+</head>
+<body>
+  <div class="loader">
+    <h1>Cargando Obsidian Studios...</h1>
+    <div>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</body>
+</html>
